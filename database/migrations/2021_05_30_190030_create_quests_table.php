@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePagesTable extends Migration
+class CreateQuestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreatePagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table) {
+        Schema::create('quests', function (Blueprint $table) {
             $table->id();
             $table->integer('configuration_id');
             $table->string('key')->unique();
-            $table->string('title', 64);
             $table->string('name');
+            $table->string('title');
+            $table->string('description');
+            $table->string('icon');
             $table->timestamps();
         });
     }
@@ -30,6 +32,6 @@ class CreatePagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pages');
+        Schema::dropIfExists('quests');
     }
 }
