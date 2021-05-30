@@ -37,7 +37,8 @@
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-               <h3>Hallo Welt!</h3>
+               <h1> moinsen </h1>
+               <p> kjaif </p>
             </div>
         </div>
     </body>
