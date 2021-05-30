@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Ameos\Core\CoreServiceProvider::class,
 
         /*
          * Application Service Providers...
