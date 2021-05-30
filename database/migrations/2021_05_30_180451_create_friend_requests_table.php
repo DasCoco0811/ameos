@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSECSTable extends Migration
+class CreateFriendRequestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateSECSTable extends Migration
      */
     public function up()
     {
-        Schema::create('s_e_c_s', function (Blueprint $table) {
+        Schema::create('friend_requests', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->string('recovery_email', 128)->unique();
-            $table->string('recovery_phonenumber', 32)->unique();
+            $table->string('main_id')->unique();
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateSECSTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('s_e_c_s');
+        Schema::dropIfExists('friend_requests');
     }
 }

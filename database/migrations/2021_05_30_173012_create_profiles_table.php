@@ -15,11 +15,11 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->integer('country_id');
+            $table->string('user_id')->unique();
+            $table->integer('country_id')->unique();
             $table->string('avatar');
             $table->string('cover');
-            $table->string('profilename', 32);
+            $table->string('profilename', 32)->unique();
             $table->text('description', 500);
             $table->string('tagline');
             $table->string('email');
