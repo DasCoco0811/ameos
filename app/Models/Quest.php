@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Quest extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'configuration_id',
+        'key',
+        'name',
+        'title',
+        'description',
+        'icon'
+    ];
 }

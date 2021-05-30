@@ -11,16 +11,16 @@ class Profile extends Model
 
     protected $fillable = [
         'user_id',
-        'country_id'
-        'avatar'
-        'cover'
-        'profilename'
-        'description'
-        'tagline'
-        'email'
-        'website'
-        'birthday'
-        'occupation'
+        'country_id',
+        'avatar',
+        'cover',
+        'profilename',
+        'description',
+        'tagline',
+        'email',
+        'website',
+        'birthday',
+        'occupation',
         'status'
     ];
 }
