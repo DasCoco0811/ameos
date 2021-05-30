@@ -15,11 +15,11 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string(`key`);
-            $table->enum(`type`);
-            $table->string(`title`, 32);
-            $table->string(`description`);
-            $table->text(`json`);
+            $table->string('key');
+            $table->enum('type');
+            $table->string('title', 32);
+            $table->string('description');
+            $table->text('json');
             $table->timestamps();
         });
     }
