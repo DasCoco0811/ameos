@@ -15,7 +15,7 @@ class CreateConfigurationsTable extends Migration
     {
         Schema::create('configurations', function (Blueprint $table) {
             $table->id();
-            $table->string('key');
+            $table->string('key')->unique();
             $table->string('title', 64);
             $table->text('json');
             $table->timestamps();

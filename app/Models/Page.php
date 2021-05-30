@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Page extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'key',
+        'title',
+        'name',
+        'configuration_id'
+    ];
 }

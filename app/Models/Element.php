@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Element extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'key',
+        'configuration_id',
+        'name',
+        'resource'
+    ];
 }
