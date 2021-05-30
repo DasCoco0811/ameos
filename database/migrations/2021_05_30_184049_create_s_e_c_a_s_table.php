@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFriendsTable extends Migration
+class CreateSECASTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateFriendsTable extends Migration
      */
     public function up()
     {
-        Schema::create('friends', function (Blueprint $table) {
+        Schema::create('s_e_c_a_s', function (Blueprint $table) {
             $table->id();
-            $table->integer('main_id');
-            $table->integer('sidekick_id');
-            $table->boolean('deactivated');
+            $table->integer('secq_id');
+            $table->string('content');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateFriendsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('friends');
+        Schema::dropIfExists('s_e_c_a_s');
     }
 }
