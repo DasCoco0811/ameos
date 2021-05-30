@@ -14,5 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        \Artisan::call('ameos:generate:languages');
+        \Artisan::call('ameos:generate:countries');
     }
 }
