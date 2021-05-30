@@ -26,7 +26,7 @@ class CreateProfilesTable extends Migration
             $table->string('website');
             $table->dateTime('birthday');
             $table->string('occupation', 32);
-            $table->enum('status');
+            $table->string('status');//@TODO: Update to Enum
             $table->timestamps();
         });
     }
