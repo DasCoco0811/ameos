@@ -1,35 +1,52 @@
-# laravel-package-boilerplate
+# Very short description of the package
 
-Boilerplate for Laravel packages. Use it as a starting point for your own Laravel packages.
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ameos/core.svg?style=flat-square)](https://packagist.org/packages/ameos/core)
+[![Total Downloads](https://img.shields.io/packagist/dt/ameos/core.svg?style=flat-square)](https://packagist.org/packages/ameos/core)
+![GitHub Actions](https://github.com/ameos/core/actions/workflows/main.yml/badge.svg)
 
-Includes PHPUnit and PHPCodeSniffer configuration, as well as a known good Travis CI configuration and a couple of base test cases. Uses `orchestra/testbench` as the basis of the provided base test.
+This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
-Also includes my [Artisan Standalone](https://github.com/matthewbdaly/artisan-standalone) package as a development dependency. As a result, you should be able to run Artisan commands as follows:
+## Installation
+
+You can install the package via composer:
 
 ```bash
-vendor/bin/artisan make:model Example
+composer require ameos/core
 ```
 
-How do I use it?
-----------------
-###### Step 1
-```bash
-composer create-project matthewbdaly/laravel-package-boilerplate <YOUR_NEW_PACKAGE_DIRECTORY>
+## Usage
+
+```php
+// Usage description here
 ```
 
-This will generate a starting boilerplate for your app.
+### Testing
 
-###### Step 2
-You'll want to update your `composer.json` with your required namespace and other details - you can do this by running
 ```bash
- vendor/bin/artisan app:name InsertYourProjectNameHere
- ```
+composer test
+```
 
-Test cases
-----------
+### Changelog
 
-The package includes three test cases:
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-* `TestCase` - Effectively the normal Laravel test case. Use it the same way you would your normal Laravel test case
-* `SimpleTestCase` - Extends the default PHPUnit test case, so it doesn't set up a Laravel application, making it quicker and well-suited to properly isolated unit tests
-* `BrowserKitTestCase` - Sets up BrowserKit
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email kornwinkel.kim@gmail.com instead of using the issue tracker.
+
+## Credits
+
+-   [Kim Sebastian Kornwinkel](https://github.com/ameos)
+-   [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## Laravel Package Boilerplate
+
+This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
