@@ -15,7 +15,9 @@ class CreateFriendRequestsTable extends Migration
     {
         Schema::create('friend_requests', function (Blueprint $table) {
             $table->id();
-            $table->string('main_id')->unique();
+            $table->integer('main_id');
+            $table->integer('sidekick_id');
+            $table->string('status');//@TODO: Update enum
             $table->timestamps();
         });
     }
