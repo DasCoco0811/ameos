@@ -14,33 +14,33 @@ class CoreServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'core');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'core');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'core');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'core');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('core.php'),
             ], 'config');
 
-            // Publishing the views.
-            /*$this->publishes([
+            //Publishing the views.
+            $this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/core'),
-            ], 'views');*/
+            ], 'views');
 
             // Publishing assets.
-            /*$this->publishes([
+            $this->publishes([
                 __DIR__.'/../resources/assets' => public_path('vendor/core'),
-            ], 'assets');*/
+            ], 'assets');
 
             // Publishing the translation files.
-            /*$this->publishes([
+            $this->publishes([
                 __DIR__.'/../resources/lang' => resource_path('lang/vendor/core'),
-            ], 'lang');*/
+            ], 'lang');
 
-            // Registering package commands.
-            // $this->commands([]);
+            //Registering package commands.
+            $this->commands([]);
         }
     }
 
