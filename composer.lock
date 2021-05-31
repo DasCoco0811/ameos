@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/core",
-                "reference": "a701670c0eb790d55c0ac369e751431e31d80dc1"
+                "reference": "79e1dde363646a4ec43f14a47e4328a8931b6050"
             },
             "type": "library",
             "license": [

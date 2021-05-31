@@ -15,15 +15,26 @@
                 </div>
             </div>
         </div>
+
+        <ProgressWidget></ProgressWidget>
+        <FeatureBadgesWidget></FeatureBadgesWidget>
+        <MembersWidget></MembersWidget>
+
     </breeze-authenticated-layout>
 </template>
 
 <script>
+    import MembersWidget from '@/Components/MembersWidget'
+    import ProgressWidget from '@/Components/ProgressWidget'
+    import FeatureBadgesWidget from '@/Components/FeatureBadgesWidget'
     import BreezeAuthenticatedLayout from '@/Layouts/Authenticated'
 
     export default {
         components: {
+            ProgressWidget,
+            FeatureBadgesWidget,
             BreezeAuthenticatedLayout,
+            MembersWidget,
         },
 
         props: {
