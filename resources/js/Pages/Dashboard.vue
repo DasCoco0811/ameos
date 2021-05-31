@@ -25,7 +25,9 @@
 </template>
 
 <script>
-    import FriendsActivityWidget from '@/Components/GroupsWidget'
+    import CreatorWidget from '@/Components/CreatorWidget'
+    import ProgressWidget from '@/Components/ProgressWidget'
+    import GroupsWidget from '@/Components/GroupsWidget'
     import FriendsActivityWidget from '@/Components/FriendsActivityWidget'
     import CalendarWidget from '@/Components/CalendarWidget'
     import ReactionsReceived from '@/Components/ReactionsReceivedWidget'
@@ -50,6 +52,8 @@
             CalendarWidget,
             FriendsActivityWidget,
             GroupsWidget,
+            PostWidget,
+            CreatorWidget,
         },
 
         props: {
