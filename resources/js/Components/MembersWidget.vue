@@ -3,6 +3,14 @@
        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="overflow-hidden shadow-sm sm:rounded-lg" style="background-color: #212529;">
                 <div class="members-container">
+                    <div class="members-header">
+                        <h1>Open Quests</h1>
+                        <div>
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </div>
+                    </div>
                     <ul class="members-tabs">
                         <li>newest</li>
                         <li>popular</li>

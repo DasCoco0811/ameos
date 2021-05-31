@@ -19,11 +19,19 @@
         <ProgressWidget></ProgressWidget>
         <FeatureBadgesWidget></FeatureBadgesWidget>
         <MembersWidget></MembersWidget>
+        <TeaserWidget></TeaserWidget>
 
     </breeze-authenticated-layout>
 </template>
 
 <script>
+    import FriendsActivityWidget from '@/Components/GroupsWidget'
+    import FriendsActivityWidget from '@/Components/FriendsActivityWidget'
+    import CalendarWidget from '@/Components/CalendarWidget'
+    import ReactionsReceived from '@/Components/ReactionsReceivedWidget'
+    import StatsBoxWidget from '@/Components/StatsBoxWidget'
+    import OpenQuestsWidget from '@/Components/OpenQuestsWidget'
+    import TeaserWidget from '@/Components/TeaserWidget'
     import MembersWidget from '@/Components/MembersWidget'
     import ProgressWidget from '@/Components/ProgressWidget'
     import FeatureBadgesWidget from '@/Components/FeatureBadgesWidget'
@@ -35,6 +43,13 @@
             FeatureBadgesWidget,
             BreezeAuthenticatedLayout,
             MembersWidget,
+            TeaserWidget,
+            OpenQuestsWidget,
+            StatsBoxWidget,
+            ReactionsReceived,
+            CalendarWidget,
+            FriendsActivityWidget,
+            GroupsWidget,
         },
 
         props: {
